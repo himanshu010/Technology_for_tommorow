@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Chilanka|Sigmar+One|Dancing+Script|Lato|Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="script.js"></script>
+    <title>Portfolio</title>
+    <link rel="icon" type="image/ico" href="Images/logo.png" />
+  </head>
+  <body>
+    <div class="nav1" style="display: flex; justify-content: center;">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark  fixed-top color-white navbar-fixed-top"
+        style="font-size: 22px;"
+      >
+        <div class="col">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="Images/profile.png"
+              height="150px"
+              width="150px"
+              style="border-radius: 80px"
+          /></a>
+        </div>
+
+        <button
+          class="navbar-toggler btn-light "
+          style="background-color: black;border-color: lightgray;border-radius: 20px;"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse blackforbutton"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mr-auto" style="display: flex">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#all-work">Our Work</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main-cover">
+      <div class="cover">
+        <div class="container text">
+          <div class="row cover-head">Technology For Tommorow</div>
+          <div class="row cover-text">
+            Skillenza Hackathon
+          </div>
+          <div
+            class=" typewrite"
+            data-type='[ "Hi", "We are from Shunya", "a team that focuses on building platforms", "for futuristic ideas using Machine Learning"]'
+          >
+            <span class="wrap"></span>
+          </div>
+
+          <div class="container discover">
+            <button
+              type="but button"
+              class="btn btn-light btn-default btn-circle"
+              style="font-size: 20px;border-radius: 30px;height: 60px;width: 200px"
+              onclick="discover_more()"
+            >
+              Discover more
+            </button>
+          </div>
+
+          <div class="social_media">
+            <a href="#about-me"> <i class="fa fa-sort-down"></i></a>
+            <!-- <a href="https://twitter.com/himanshu__aswal"><i class="fa fa-twitter icon"></i></a> -->
+
+            <!-- <a href="https://www.facebook.com/profile.php?id=100009031982067"><i class="fa fa-facebook-f icon"></i></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about" id="about-me">
+      <div class="about-head">
+        About Us
+      </div>
+      <div class="about-details">
+        <div class="about-text">
+          We are from Maharaja Agrasen Institute of Technology. Here we use
+          Machine Learning Algorithms in Real Life Scenarios and to develop
+          ideas into Reality
+        </div>
+        <div class="about-img">
+          <img
+            src="Images/mait.jpg"
+            height="500px"
+            width="600px"
+            alt="my image"
+            class="img-thumbnail rounded float-right"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="my-work" id="all-work">
+      <div class="work-head">
+        Our Work
+      </div>
+      <div class="cards">
+        <!-- card template -->
+        <a
+          class="card"
+          href="https://colab.research.google.com/drive/1vYeaykIwtcBYjrJSo-_tqoFJkD6IcbRe"
+        >
+          <div class="card-image"><img src="Images/b.jpg" /></div>
+          <div class="card-text">
+            Human Activity Recognition Model
+          </div>
+        </a>
+
+        <a
+          class="card"
+          href="https://colab.research.google.com/drive/1N060nx_207idZYrEUZ9FUZ-Rnpt8Ahbu"
+        >
+          <div class="card-image"><img src="Images/c.png" /></div>
+          <div class="card-text">
+            Text Analysis Model
+          </div>
+        </a>
+
+        <div class="footer sticky-bottom">
+          <div class="footer1">
+            Made with ❤ by Shunya
+          </div>
+          <div class="footer2">
+            All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function() {
+        $(document).scroll(function() {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+    <script>
+      function discover_more() {
+        location.href = "discover_more.html";
+      }
+    </script>
+  </body>
+</html>
